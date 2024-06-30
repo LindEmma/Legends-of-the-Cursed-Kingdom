@@ -9,7 +9,7 @@ namespace CharacterCreatorApp.Strategies.MageAttacks
             Random random = new Random();
             int ap = random.Next(5, 15); //randomizes attack point
 
-            Console.WriteLine($"{attacker.GetType().Name} throws a fire ball, it goes straight through the enemy's armour!");
+            Console.WriteLine($"{attacker.Name} throws a fire ball, it goes straight through the enemy's armour!");
             target.TakeDamage(ap);
         }
     }
